@@ -3,19 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<title>tommyglee</title>
+	<link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
 </head>
 <body>
 
 <header>
 	<h1>tommyglee</h1>
-	<nav>
-		<ul>
-			<li><a href="{{site.baseurl}}/index.html">home</a></li>
-			<li><a href="{{site.baseurl}}/about.html">about</a></li>
-		</ul>
-	</nav>
+	{% include nav.html navclass='nav-top' %}
 </header>
+
 {{content}}
+
+<footer>
+	<p> 2019 tommy g lee </p>
+</footer>
 
 </body>
 </html>
